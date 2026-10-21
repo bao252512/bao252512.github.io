@@ -1,27 +1,43 @@
-import localJournalContent from '../content/journal/first-local-journal.md?raw'
-import simImage from '../assets/photo_8.jpg'
+import mapping from '../assets/projects/flood-mapping.svg'
+import prediction from '../assets/projects/flood-prediction.svg'
+import mappingContent from '../content/journal/flood-mapping.md?raw'
+import predictionContent from '../content/journal/flood-prediction.md?raw'
 import type { LocalJournalPost, WritingEntry } from '../types/portfolio'
-import { createJournalPostHref } from '../utils/journal'
-import { blog } from './blog'
-
 export const journalPosts = [
   {
-    source: 'local',
-    slug: 'my-first-local-journal-entry',
-    href: createJournalPostHref('my-first-local-journal-entry'),
-    title: 'Mentoring for the SIM-LSE Data Analytics Challenge 2026',
-    image: simImage,
-    imageAlt: 'Study desk representing a local learning journal entry',
-    publishedDate: 'Jul 4, 2026',
-    category: 'Learning Journal',
-    summary:
-      'Things I\'ve learnt from the experience as a mentor for 50+ student participants from the competition.',
-    topics: ['Data Analytics', 'Competition', 'Superstore Dataset'],
-    content: localJournalContent,
+    "source": "local",
+    "slug": "flood-mapping",
+    "href": "#/journal/flood-mapping",
+    "title": "Flood Mapping with Satellite Radar",
+    "image": mapping,
+    "imageAlt": "Conceptual satellite-signal illustration for flood mapping; not observed model output",
+    "publishedDate": "Jun – Sep 2026",
+    "category": "Geospatial machine learning",
+    "summary": "Radar, optical imagery, and the challenge of generalising to unseen floods.",
+    "topics": [
+      "Sen1Floods11",
+      "U-Net",
+      "Event-level validation"
+    ],
+    "content": mappingContent
   },
+  {
+    "source": "local",
+    "slug": "flood-prediction",
+    "href": "#/journal/flood-prediction",
+    "title": "Regression with a Flood Prediction Dataset",
+    "image": prediction,
+    "imageAlt": "Conceptual workflow from features through ensemble to prediction; not measured results",
+    "publishedDate": "Jul – Oct 2026",
+    "category": "Tabular machine learning",
+    "summary": "Feature engineering, cross-validation, and an ensemble for flood probability.",
+    "topics": [
+      "Kaggle",
+      "Gradient boosting",
+      "Ensembling"
+    ],
+    "content": predictionContent
+  }
 ] satisfies LocalJournalPost[]
-
-export const writing = [...journalPosts, ...blog] satisfies WritingEntry[]
-
-export const getLocalJournalPostBySlug = (slug: string): LocalJournalPost | undefined =>
-  journalPosts.find((post) => post.slug === slug)
+export const writing: WritingEntry[] = [...journalPosts]
+export const getLocalJournalPostBySlug = (slug: string): LocalJournalPost | undefined => journalPosts.find(post => post.slug === slug)

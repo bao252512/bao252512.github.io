@@ -1,97 +1,10 @@
-import { Badge, Box, Heading, Image, SimpleGrid, Text } from '@chakra-ui/react'
-
-import ContentCard from './shared/ContentCard'
-import SectionShell from './shared/SectionShell'
-import { awards, sectionContent } from '../data/portfolio'
-import { getAnimationDelayClass } from '../utils/animation'
-
-function Awards() {
-  return (
-    <SectionShell
-      id="awards"
-      eyebrow={sectionContent.awards.eyebrow}
-      title={sectionContent.awards.title}
-      intro={sectionContent.awards.description}
-      nextSectionId="projects"
-    >
-        <SimpleGrid columns={{ base: 1, md: 2, xl: 3 }} gap={6}>
-          {awards.map((award, index) => (
-            <ContentCard
-              key={award.title}
-              p={6}
-              textAlign="left"
-              className={`reveal-up ${getAnimationDelayClass(index)}`}
-              _hover={{
-                borderColor: 'rgba(98, 240, 213, 0.45)',
-                transform: 'translateY(-4px)',
-                boxShadow: '0 16px 34px rgba(3, 10, 21, 0.55)',
-              }}
-            >
-              <Box display="flex" justifyContent="space-between" alignItems="center" mb={4}>
-                <Box
-                  w="48px"
-                  h="48px"
-                  p={2}
-                  borderRadius="md"
-                  bg="rgba(34, 128, 235, 0.15)"
-                  border="1px solid"
-                  borderColor="rgba(69, 162, 255, 0.36)"
-                >
-                  {award.logo ? (
-                    <Image
-                      src={award.logo}
-                      alt={`${award.organization} logo`}
-                      w="100%"
-                      h="100%"
-                      objectFit="contain"
-                    />
-                  ) : (
-                    <Text
-                      role="img"
-                      aria-label={`${award.organization} mark`}
-                      className="code-font"
-                      color="var(--accent-300)"
-                      fontSize="xs"
-                      fontWeight={800}
-                      textAlign="center"
-                    >
-                      {award.logoText}
-                    </Text>
-                  )}
-                </Box>
-                <Badge
-                  className="code-font"
-                  px={2.5}
-                  py={1}
-                  borderRadius="md"
-                  bg="rgba(98, 240, 213, 0.12)"
-                  border="1px solid"
-                  borderColor="rgba(98, 240, 213, 0.45)"
-                  color="var(--text-100)"
-                  fontWeight={500}
-                  fontSize="0.65rem"
-                >
-                  {award.tag}
-                </Badge>
-              </Box>
-
-              <Heading as="h3" fontSize="xl" color="var(--text-100)" mb={2}>
-                {award.title}
-              </Heading>
-              <Text className="code-font" color="var(--accent-300)" fontSize="sm" mb={3}>
-                {award.organization}
-              </Text>
-              <Text color="var(--text-300)" mb={3} lineHeight="1.75">
-                {award.description}
-              </Text>
-              <Text className="code-font" color="var(--text-300)" fontSize="xs">
-                YEAR: {award.year}
-              </Text>
-            </ContentCard>
-          ))}
-        </SimpleGrid>
-    </SectionShell>
-  )
+import { awards } from '../data/awards'
+import { certificates } from '../data/certificates'
+import { useEffect, useRef, useState } from 'react'
+export default function Awards(){
+ const [selected,setSelected]=useState<number|null>(null)
+ const dialog=useRef<HTMLDialogElement>(null)
+ useEffect(()=>{if(selected!==null)dialog.current?.showModal()},[selected])
+ const close=()=>dialog.current?.close()
+ return <section id="awards" className="recognition-atlas wrap"><div className="recognition-intro" data-reveal><p className="eyebrow">MILESTONES, NOT A FINISH LINE</p><h2>Reasons to<br /><em>keep going.</em></h2><p>A few moments of recognition —<br />and the evidence behind the learning.</p><span className="recognition-spark" aria-hidden="true">✳</span></div><div className="recognition-records" data-reveal>{awards.map(a=><details key={a.title} className="award-record"><summary><span className="award-year">{a.year}</span><span><strong>{a.title}</strong><small>{a.tag.toLowerCase()}</small></span><span className="detail-sign" aria-hidden="true">+</span></summary><div className="award-description"><p>{a.description}</p><span>{a.organization}</span></div></details>)}<div className="evidence-heading"><span className="eyebrow">OPEN THE EVIDENCE</span><span>3 selected documents</span></div><div className="evidence-contact-sheet">{certificates.map((c,i)=><button className="evidence-plate" key={c.title} onClick={()=>setSelected(i)} aria-label={c.ariaLabel}><img src={c.file} alt={`${c.title} certificate`} loading="lazy"/><span>{c.title}<i aria-hidden="true">↗</i></span></button>)}</div></div><dialog className="evidence-dialog" ref={dialog} aria-labelledby="evidence-title" onClose={()=>setSelected(null)} onClick={e=>{if(e.target===e.currentTarget)close()}}>{selected!==null&&<><div className="evidence-dialog-header"><div><p className="eyebrow">SUPPORTING DOCUMENT</p><h2 id="evidence-title">{certificates[selected].title}</h2></div><button autoFocus onClick={close} aria-label="Close document preview">Close ×</button></div><img src={certificates[selected].file} alt={certificates[selected].description}/><div className="evidence-dialog-footer"><p>{certificates[selected].description}</p><a className="text-link" href={certificates[selected].file} target="_blank" rel="noreferrer">Open original image ↗</a></div></>}</dialog></section>
 }
-
-export default Awards

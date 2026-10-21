@@ -1,69 +1,39 @@
-# Personas
+# Gia Bao portfolio personas
 
-## Persona 1: Student Template User
+These are design archetypes, not claims about real individuals. They use the approved reviewer/recruiter/owner approach and do not introduce new features.
 
-- **Name**: Minh, the student portfolio builder.
-- **Role**: Student or early-career developer using the repository as a baseline portfolio.
-- **Goals**:
-  - Replace example content with personal profile, education, experience, projects, skills, media, and contact details.
-  - Run the site locally without confusion.
-  - Deploy the portfolio to GitHub Pages.
-  - Understand where to make changes without accidentally breaking layout code.
-- **Motivations**:
-  - Build a polished portfolio for internships, scholarships, jobs, or school applications.
-  - Learn a practical React/Vite project structure.
-  - Avoid getting stuck on deployment details.
-- **Pain Points**:
-  - New to GitHub Pages, Vite base paths, and GitHub Actions.
-  - Can accidentally break JSX while editing text.
-  - May not know which assets or links need replacement.
-- **Relevant Stories**: US-01 through US-13, US-15, US-16.
+## P1: Academic reviewer
 
-## Persona 2: Portfolio Visitor
+Role: Admissions or scholarship reviewer evaluating Gia Bao's academic preparation and interest in data science.
 
-- **Name**: Linh, the portfolio reviewer.
-- **Role**: Recruiter, mentor, teacher, peer, scholarship reviewer, or collaborator viewing the deployed site.
-- **Goals**:
-  - Quickly understand the student's profile, education, experience, projects, skills, and contact options.
-  - Navigate the portfolio smoothly on desktop or mobile.
-  - Open supporting links, videos, and certificates.
-- **Motivations**:
-  - Evaluate the student's readiness, interests, and communication clarity.
-  - Find relevant evidence of technical ability and learning journey.
-- **Pain Points**:
-  - Poor navigation, missing labels, broken assets, or incorrect links reduce trust.
-  - Mobile issues can make the portfolio hard to review.
-- **Relevant Stories**: US-07, US-08, US-09, US-11, US-14.
+Goals: Understand his direction quickly, assess project reasoning and education, and inspect supporting evidence.
 
-## Persona 3: Template Maintainer
+Needs: Accurate source-based claims, readable project evaluation, clear scholarship-offer versus enrollment distinctions, accessible documents, and an easy resume download.
 
-- **Name**: An, the template maintainer.
-- **Role**: Developer maintaining the portfolio baseline for future students.
-- **Goals**:
-  - Keep content data, UI components, deployment configuration, and tests easy to maintain.
-  - Preserve the current visual experience while improving code organization.
-  - Provide clear documentation and guardrails for student forks.
-- **Motivations**:
-  - Reduce repeated support questions.
-  - Make future enhancements safer.
-  - Keep the template stable across GitHub Pages deployments.
-- **Pain Points**:
-  - Duplicated navigation IDs and helper functions can drift.
-  - Hard-coded content makes template updates slow.
-  - Missing tests make regressions harder to catch.
-- **Relevant Stories**: US-03, US-04, US-05, US-06, US-10, US-12, US-13, US-15, US-16.
+Constraints: Limited review time; may browse on mobile or use keyboard navigation. Does not need an account or unavailable contact channel.
 
-## Persona Coverage Summary
+Relevant stories: GB-01 through GB-06.
 
-| Persona | Primary Needs Covered |
-|---|---|
-| Student Template User | Setup, customization, local development, testing, deployment, troubleshooting |
-| Portfolio Visitor | Navigation, content clarity, media access, contact flow, accessibility |
-| Template Maintainer | Typed data, shared config, reusable helpers/components, docs, tests, deployment stability |
+## P2: Internship recruiter
 
-## Extension Rule Compliance
+Role: Recruiter or technical reviewer evaluating suitability for data science, analytics, or data engineering opportunities.
 
-| Extension | Status | Rationale |
-|---|---|---|
-| Security Baseline | Disabled | User opted out during Requirements Analysis. |
-| Property-Based Testing | Disabled | User opted out during Requirements Analysis. |
+Goals: Understand practical Python/SQL and modeling experience, inspect the two project workflows, and review FOXAI internship contributions.
+
+Needs: Clearly labeled reported metrics, concise methods and validation, realistic attribution, and a downloadable resume. Missing repository/demo/contact links should not create misleading actions.
+
+Constraints: Reviews many candidates; may scan first and open project detail later.
+
+Relevant stories: GB-01 through GB-06, especially GB-02, GB-03, and GB-04.
+
+## P3: Gia Bao, portfolio owner
+
+Role: Maintainer of his personal website and supplied source materials.
+
+Goals: Present an accurate data science/analytics identity, replace inherited personal material, and keep content maintainable.
+
+Needs: Clear content/asset organization, retained original resume/evidence, relevant maintenance guidance, and a site compatible with the existing static hosting setup.
+
+Constraints: No public contact or project-external URLs have been supplied. Keep technical complexity proportional to a personal portfolio.
+
+Relevant story: GB-07; owner benefits from the accuracy constraints in GB-01 through GB-06.

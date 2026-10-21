@@ -1,61 +1,56 @@
-import profileImage from '../assets/profile.jpeg'
-import resumePdf from '../assets/documents/resume.pdf'
-import type { HeroSection, Profile } from '../types/portfolio'
+import profileImage from '../assets/gia-bao-mark.svg'
+import type { Profile, HeroSection } from '../types/portfolio'
 
-export const profile = {
-  name: 'Nham Quoc Hung',
-  slug: 'nham-quoc-hung',
-  role: 'Data Engineer at Torilab Inc.',
-  location: 'Hanoi Capital Region, Vietnam',
-  email: 'nhamhung.gttn@gmail.com',
-  profileImage,
-  resume: {
-    label: 'Download Resume',
-    href: resumePdf,
-    fileName: 'Nham-Quoc-Hung-Resume.pdf',
-    ariaLabel: 'Download Nham Quoc Hung resume PDF',
-  },
-  summary:
-    'I am a Computer Science graduate with a specialisation in Data and passion for teaching. In a world being increasingly influenced and shaped by technological advances, these domains are my way of navigating through present complexities and making sense of what is coming next.',
-  socialLinks: [
-    {
-      label: 'GitHub',
-      href: 'https://github.com/nhamhung',
-      ariaLabel: 'Open Nham Quoc Hung GitHub profile',
-    },
-    {
-      label: 'LinkedIn',
-      href: 'https://www.linkedin.com/in/quoc-hung-nham/',
-      ariaLabel: 'Open Nham Quoc Hung LinkedIn profile',
-    },
-    {
-      label: 'Email',
-      href: 'mailto:nhamhung.gttn@gmail.com',
-      ariaLabel: 'Email Nham Quoc Hung',
-    },
-  ],
+export const profile: Profile = {
+  "name": "Do Gia Bao",
+  "slug": "do-gia-bao",
+  "role": "Data Science & Analytics",
+  "location": "Hanoi, Vietnam",
+  "email": "",
+  "profileImage": profileImage,
+  "summary": "I explore how data can help us understand the world — from mapping floods with satellite imagery to building clearer business intelligence workflows. My interests sit at the intersection of data science, machine learning, and analytics.",
+  "socialLinks": []
 } satisfies Profile
 
 export const hero = {
-  eyebrow: '<engineer id="nham-quoc-hung" />',
-  statusBadges: ['SYSTEM STATUS: BUILDING', 'DATA | SOFTWARE | MENTORSHIP'],
-  headline: 'Building reliable data pipelines and scalable data platforms.',
-  highlightedPhrase: 'data pipelines',
-  intro: profile.summary,
-  stats: [
-    { value: '4+ Years', label: 'Experience' },
-    { value: 'Data + Teaching', label: 'Focus' },
-    { value: 'Everything Data-related', label: 'Coverage' },
+  "eyebrow": "DO GIA BAO / DATA SCIENCE & ANALYTICS",
+  "statusBadges": [
+    "HANOI, VIETNAM",
+    "LEARN. ANALYSE. BUILD."
   ],
-  primaryAction: {
-    label: 'View Projects',
-    sectionId: 'projects',
-    ariaLabel: 'Scroll to selected projects',
+  "headline": "Making sense of data. Making room for impact.",
+  "highlightedPhrase": "data.",
+  "intro": "I explore how data can help us understand the world — from mapping floods with satellite imagery to building clearer business intelligence workflows. My interests sit at the intersection of data science, machine learning, and analytics.",
+  "stats": [
+    {
+      "value": "0.775 IoU",
+      "label": "Flood mapping · reported"
+    },
+    {
+      "value": "Top 7.4%",
+      "label": "Kaggle · private rank"
+    },
+    {
+      "value": "Python + SQL",
+      "label": "Analytics toolkit"
+    }
+  ],
+  "primaryAction": {
+    "label": "Explore projects",
+    "sectionId": "projects",
+    "ariaLabel": "Explore selected data science projects"
   },
-  secondaryAction: {
-    label: 'Contact',
-    sectionId: 'contact',
-    ariaLabel: 'Scroll to contact section',
+  "secondaryAction": {
+    "label": "Read case studies",
+    "sectionId": "journal",
+    "ariaLabel": "Read project case studies"
   },
-  stackHighlights: ['Big Data', 'Data Analytics', 'Data Science', 'Data Engineering', 'Machine Learning', 'Deep Learning'],
+  "stackHighlights": [
+    "Python",
+    "SQL",
+    "Machine Learning",
+    "Geospatial Analysis",
+    "Data Visualisation",
+    "Business Intelligence"
+  ]
 } satisfies HeroSection

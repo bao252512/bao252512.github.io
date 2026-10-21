@@ -1,0 +1,52 @@
+# Retired presentation files
+
+The explicitly requested independent redesign supersedes the prior template runtime and public document-download controls. Original user inputs and historical audit remain unchanged.
+
+- src/templates/types.ts
+- src/templates/journalPostPages.test.tsx
+- src/templates/templateRegistry.test.ts
+- src/templates/index.ts
+- src/templates/options.ts
+- src/templates/business/BusinessJournal.tsx
+- src/templates/business/BusinessHero.tsx
+- src/templates/business/BusinessDetailList.tsx
+- src/templates/business/BusinessSkills.tsx
+- src/templates/business/BusinessProjects.tsx
+- src/templates/business/BusinessAbout.tsx
+- src/templates/business/businessTemplate.test.tsx
+- src/templates/business/BusinessJournalPostPage.tsx
+- src/templates/business/BusinessSectionHeading.tsx
+- src/templates/business/BusinessAwards.tsx
+- src/templates/business/BusinessShell.tsx
+- src/templates/business/BusinessGallery.tsx
+- src/templates/business/index.ts
+- src/templates/business/BusinessEducation.tsx
+- src/templates/business/BusinessExperience.tsx
+- src/templates/business/business.css
+- src/templates/business/BusinessContact.tsx
+- src/templates/engineering/EngineeringShell.tsx
+- src/templates/engineering/index.ts
+- src/hooks/usePortfolioLayout.ts
+- src/hooks/usePortfolioLayout.test.ts
+- src/components/shared/LogoMark.tsx
+- src/components/shared/ContentCard.tsx
+- src/components/shared/PortfolioStyleSelector.tsx
+- src/components/shared/ExternalAction.tsx
+- src/components/shared/SectionShell.tsx
+- src/components/ui/color-mode-utils.ts
+- src/components/ui/toaster-instance.ts
+- src/components/ui/toaster.tsx
+- src/components/ui/tooltip.tsx
+- src/components/ui/color-mode.tsx
+- src/components/ui/provider.tsx
+- src/components/Education.tsx
+- src/components/Journal.tsx
+- src/components/Contact.tsx
+- src/utils/contact.ts
+- src/utils/animation.ts
+- src/utils/templateSelection.ts
+- src/utils/templateSelection.test.ts
+- src/utils/scroll.ts
+- src/utils/media.ts
+- src/data/template.ts
+- src/assets/documents/gia-bao-resume.docx

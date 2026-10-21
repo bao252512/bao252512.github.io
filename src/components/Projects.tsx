@@ -1,95 +1,14 @@
-import { Badge, Box, Flex, Heading, HStack, SimpleGrid, Text, VStack } from '@chakra-ui/react'
-
-import ContentCard from './shared/ContentCard'
-import ExternalAction from './shared/ExternalAction'
-import LogoMark from './shared/LogoMark'
-import SectionShell from './shared/SectionShell'
-import { projects, sectionContent } from '../data/portfolio'
-import { getAnimationDelayClass } from '../utils/animation'
-
-function Projects() {
-  return (
-    <SectionShell
-      id="projects"
-      eyebrow={sectionContent.projects.eyebrow}
-      title={sectionContent.projects.title}
-      intro={sectionContent.projects.description}
-      nextSectionId="gallery"
-    >
-        <SimpleGrid columns={{ base: 1, md: 2, xl: 3 }} gap={6}>
-          {projects.map((project, index) => (
-            <ContentCard
-              key={project.title}
-              p={6}
-              display="flex"
-              flexDirection="column"
-              justifyContent="space-between"
-              _hover={{
-                borderColor: 'rgba(98, 240, 213, 0.45)',
-                transform: 'translateY(-4px)',
-                boxShadow: '0 18px 38px rgba(3, 10, 21, 0.55)',
-              }}
-              className={`reveal-up ${getAnimationDelayClass(index)}`}
-            >
-              <VStack align="stretch" gap={4}>
-                <HStack align="center" gap={4}>
-                  <LogoMark
-                    logoKey={project.logoKey}
-                    logoLabel={project.logoLabel}
-                    logoAccent={project.logoAccent}
-                    size="xl"
-                  />
-                  <Box minW={0}>
-                    <Text className="code-font" fontSize="xs" color="var(--text-300)" mb={1}>
-                      REPOSITORY
-                    </Text>
-                    <Heading as="h3" fontSize="xl" color="var(--text-100)" lineHeight="1.2">
-                      {project.title}
-                    </Heading>
-                  </Box>
-                </HStack>
-                <Text color="var(--text-300)" lineHeight="1.8">
-                  {project.description}
-                </Text>
-
-                <Flex gap={2} wrap="wrap">
-                  {project.technologies.map((tech) => (
-                    <Badge
-                      key={tech}
-                      px={2.5}
-                      py={1}
-                      borderRadius="md"
-                      className="code-font"
-                      bg="rgba(34, 128, 235, 0.18)"
-                      border="1px solid"
-                      borderColor="rgba(69, 162, 255, 0.36)"
-                      color="var(--text-100)"
-                      fontSize="0.68rem"
-                      fontWeight={500}
-                    >
-                      {tech}
-                    </Badge>
-                  ))}
-                </Flex>
-              </VStack>
-
-              <HStack gap={3} mt={6}>
-                {project.actions.map((action, actionIndex) => (
-                  <ExternalAction
-                    key={action.href}
-                    href={action.href}
-                    label={action.label}
-                    ariaLabel={action.ariaLabel}
-                    tone={actionIndex === 0 ? 'outline' : 'primary'}
-                    testId={`project-action-${project.title.toLowerCase().replaceAll(' ', '-')}-${actionIndex}`}
-                  />
-                ))}
-              </HStack>
-            </ContentCard>
-          ))}
-        </SimpleGrid>
-    </SectionShell>
-  )
+import { useState } from 'react'
+import { projects } from '../data/projects'
+export default function Projects(){
+ const [sensor,setSensor]=useState<'radar'|'combined'>('combined')
+ const [step,setStep]=useState(0)
+ const phases=['20 input factors','Feature engineering','Three-model ensemble','Blended prediction']
+ return <section id="projects" className="work-atlas wrap"><div className="section-heading" data-reveal><div><p className="eyebrow">01 / SELECTED INVESTIGATIONS</p><h2>Two projects.<br /><em>One very real question.</em></h2></div><p>How can we better understand flooding?<br />Two different datasets. Two ways in.</p></div>
+ <article className="project-atlas" data-reveal><div className={`flood-lab ${sensor}`}><div className="lab-topline"><span>EXPERIMENT 01 / GEOSPATIAL</span><span>↗</span></div><div className="flood-map" aria-hidden="true"><svg viewBox="0 0 500 340"><defs><pattern id="terrain" width="28" height="28" patternUnits="userSpaceOnUse"><path d="M28 0H0V28" fill="none" stroke="#829a7b" strokeWidth=".5"/></pattern></defs><rect width="500" height="340" fill="url(#terrain)"/>{Array.from({length:8},(_,i)=><path key={i} className="terrain-contour" d={`M${-40+i*15} 340C${-40+i*18} 150,${420-i*30} ${240-i*20},${500-i*10} -20`}/>)}<path className="river-shadow" d="M322-20C390 70 170 100 222 188S394 268 340 360"/><path className="river-flow" d="M322-20C390 70 170 100 222 188S394 268 340 360"/><g className="optical-layer">{Array.from({length:20},(_,i)=><rect key={i} x={140+i*37%220} y={50+i*43%245} width="22" height="22" rx="2"/>)}</g><path className="scan-bar" d="M0 140H500"/><g className="map-crosshairs"><path d="M30 30h15m-7-7v15M460 305h15m-7-7v15"/></g></svg><span className="map-label">FLOOD EXTENT / CONCEPT SKETCH</span><span className="coordinate-label">21° N<br />105° E</span></div><div className="sensor-controls" role="group" aria-label="Explore satellite input concepts"><button aria-pressed={sensor==='radar'} onClick={()=>setSensor('radar')}>Radar</button><button aria-pressed={sensor==='combined'} onClick={()=>setSensor('combined')}>Radar + optical</button></div><p className="lab-caption" aria-live="polite">{sensor==='radar'?'Radar signals can reveal water beyond visible-light observations.':'Combining radar and optical inputs adds complementary context.'}</p><span className="concept-label">ILLUSTRATIVE LAYERS · NOT ACTUAL SENSOR OR MODEL OUTPUT</span></div>
+ <div className="project-story"><p className="eyebrow">SATELLITE IMAGERY × MACHINE LEARNING</p><h3>When the water rises,<br /><em>read the signals.</em></h3><p className="project-question">Can a model recognise a flood it has never seen?</p><p>I explored flood mapping with Sen1Floods11, comparing five approaches from radar thresholding to radar–optical U-Net. The real test: hold out an entire flood event, then see what carries over.</p><div className="project-result"><strong>0.775<span>IoU</span></strong><p>Reported on unseen floods<br />Multimodal U-Net · event-level validation</p></div><div className="tags">{['Python','PyTorch','Streamlit','Geospatial'].map(t=><span key={t}>{t}</span>)}</div><a className="text-link" href={projects[0].actions[0].href} aria-label="Read the satellite flood-mapping case study">Inside the investigation <span>↗</span></a></div></article>
+ <article className="project-atlas reverse" data-reveal><div className="ensemble-lab"><div className="lab-topline"><span>EXPERIMENT 02 / TABULAR</span><span>↗</span></div><div className={`model-machine phase-${step}`}><div className="machine-input"><span className="eyebrow">ENVIRONMENT + INFRASTRUCTURE</span><div className="input-bars" aria-hidden="true">{Array.from({length:20},(_,i)=><span key={i} style={{height:`${25+(i*19%65)}%`,animationDelay:`${i*.08}s`}}/>)}</div><span>20 factors. A different perspective.</span></div><div className="machine-connect" aria-hidden="true"><i/><i/><i/></div><div className="model-trio">{['LightGBM','XGBoost','CatBoost'].map((x,i)=><span key={x} style={{animationDelay:`${i*.2}s`}}>{x}<b aria-hidden="true">✳</b></span>)}</div><div className="machine-output"><span className="eyebrow">NON-NEGATIVE BLENDING</span><span className="prediction-glyph" aria-hidden="true">⌁</span><p>One ensemble.<br /><em>A more considered prediction.</em></p></div></div><div className="pipeline-controls"><button onClick={()=>setStep(s=>(s+1)%4)} aria-label="Step through the modelling workflow">{step===3?'Replay workflow':'Trace the workflow'} <span aria-hidden="true">→</span></button><span aria-live="polite">0{step+1} / {phases[step]}</span></div><span className="concept-label">CONCEPTUAL WORKFLOW · BARS ARE DECORATIVE, NOT FEATURE VALUES</span></div>
+ <div className="project-story"><p className="eyebrow">FLOOD PROBABILITY × ENSEMBLE LEARNING</p><h3>Many factors.<br /><em>A clearer forecast.</em></h3><p className="project-question">What happens when different models think together?</p><p>For Kaggle’s flood-prediction challenge, I combined feature engineering, cross-validation, and three gradient-boosting models. Iteration took my reported private ranking from 535th to 207th.</p><div className="project-result dual"><div><strong>207<span>/ 2,794</span></strong><p>Private rank · top 7.4%</p></div><div><strong>0.86893</strong><p>Reported R²</p></div></div><div className="tags">{['LightGBM','XGBoost','CatBoost','Cross-validation'].map(t=><span key={t}>{t}</span>)}</div><a className="text-link" href={projects[1].actions[0].href} aria-label="Read the flood-prediction case study">Follow the modelling process <span>↗</span></a></div></article>
+ <p className="work-provenance">Project outcomes are self-reported. These visual explorations explain the ideas; they do not run the models or reproduce experimental results.</p>
+ </section>
 }
-
-export default Projects

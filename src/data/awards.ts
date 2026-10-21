@@ -1,47 +1,36 @@
-import nusLogo from '../assets/nus.png'
-import saLogo from '../assets/sa.png'
-import zhonghuaLogo from '../assets/zhonghua.jpg'
 import type { AwardEntry } from '../types/portfolio'
 
 export const awards: AwardEntry[] = [
   {
-    title: 'ASEAN Secondary Scholarship',
-    organization: "Zhonghua Secondary School - Saint Andrew's Junior College",
-    year: '2014 - 2018',
-    description: 'Full-ride scholarship for secondary and junior college education.',
-    logo: zhonghuaLogo,
-    tag: 'SCHOLARSHIP',
+    "title": "ANU International Achievement Award",
+    "organization": "Australian National University",
+    "year": "2026",
+    "description": "Offer of a 25% tuition scholarship for Bachelor of Computing, commencing Semester 1 2027, for the programme duration up to four years. An offer, subject to conditions; acceptance and enrolment are not claimed.",
+    "logoText": "ANU",
+    "tag": "SCHOLARSHIP OFFER"
   },
   {
-    title: 'Singapore Youth Festival Choir - Silver Award',
-    organization: 'Zhonghua Secondary School',
-    year: '2015',
-    description: 'Received the Silver Award for choir performance at the Singapore Youth Festival.',
-    logo: zhonghuaLogo,
-    tag: 'ARTS',
+    "title": "Outstanding admission achievement",
+    "organization": "Hanoi University of Science and Technology",
+    "year": "2026",
+    "description": "Commendation for outstanding performance in the 2026 undergraduate admission round, issued 4 September 2026. Presented as an admission commendation, without inferring attendance at other universities.",
+    "logoText": "HUST",
+    "tag": "COMMENDATION"
   },
   {
-    title: 'Model Student Award',
-    organization: "Saint Andrew's Junior College",
-    year: '2017',
-    description: 'Recognised for exemplary character and conduct as a model student.',
-    logo: saLogo,
-    tag: 'CHARACTER',
+    "title": "Excellent Student Recognition",
+    "organization": "IELTS Fighter · IMAP Vietnam",
+    "year": "2024",
+    "description": "Excellent student certificate from IELTS Fighter, Tran Quoc Hoan centre, November 2024.",
+    "logoText": "IF",
+    "tag": "RECOGNITION"
   },
   {
-    title: 'ASEAN Undergraduate Scholarship',
-    organization: 'National University of Singapore',
-    year: '2018 - 2022',
-    description: 'Full-ride scholarship for undergraduate studies.',
-    logo: nusLogo,
-    tag: 'SCHOLARSHIP',
-  },
-  {
-    title: '1st Prize Team | AIxImpact Case Competition',
-    organization: 'QuantumBlack, a McKinsey company',
-    year: '2022',
-    description: 'Best project award in the AIxImpact healthcare case competition track.',
-    logo: nusLogo,
-    tag: 'COMPETITION',
-  },
-]
+    "title": "Sydney International Student Award eligibility",
+    "organization": "The University of Sydney",
+    "year": "2026",
+    "description": "Invitation to apply for an award contributing 20% of tuition fees if the application is successful. Eligibility is not an award offer or evidence of enrolment.",
+    "logoText": "SYD",
+    "tag": "ELIGIBILITY"
+  }
+] satisfies AwardEntry[]

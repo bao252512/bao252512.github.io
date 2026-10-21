@@ -1,22 +1,9 @@
-# Reverse Engineering Metadata
+# Reverse Engineering Timestamp
 
-**Analysis Date**: 2026-07-23T12:18:16Z
-**Analyzer**: AI-DLC
-**Workspace**: /Users/nhamhhung/my-portfolio
-**Total Files Analyzed**: 274
+main.tsx mounts React StrictMode and App directly. App owns hash navigation, system/manual motion state, scroll reveal and reading progress. One custom editorial presentation replaces the retired Engineering/Business template runtime; saved legacy preferences have no effect.
 
-## Artifacts Generated
+Existing component files provide the hero signal field, selected project concepts, methods tabs, learning journey, native recognition records, native evidence dialogs, community photography and Markdown case-study pages. Factual data remains in src/data; project articles are in src/content/journal; selected public evidence is in src/assets/evidence.
 
-- [x] business-overview.md
-- [x] architecture.md
-- [x] code-structure.md
-- [x] api-documentation.md
-- [x] component-inventory.md
-- [x] technology-stack.md
-- [x] dependencies.md
-- [x] code-quality-assessment.md
-- [x] github-pages-template-guide.md (retained; deployment guidance remains valid)
+Routes #/journal/flood-mapping and #/journal/flood-prediction load actual case articles. In-page anchors organise the rest of the site. Navigation moves focus appropriately on case routes. Document dialogs and details use browser semantics. Animated SVG/CSS concepts use no new animation library and are identified as illustrative. System/manual reduced motion leaves content readable.
 
-## Refresh Scope
-
-This refresh incorporates typed student data, local journal posts, the single/multi-page layout hook, Engineering/Neutral/Business shells, App-owned runtime style selection, guarded browser persistence, shared component utilities, automated tests, and environment-driven GitHub Pages paths.
+Vite produces a static dist bundle with GitHub Pages base-path compatibility. No backend, database, account service or public source-document download. Raw source inputs and immutable audit remain outside the deployed application. package.json/package-lock.json define installed versions; only used runtime modules enter the build.

@@ -16,10 +16,6 @@ export type ExternalLink = {
   ariaLabel: string;
 };
 
-export type DownloadLink = ExternalLink & {
-  fileName: string;
-};
-
 export type SectionAction = {
   label: string;
   sectionId: SectionId;
@@ -44,7 +40,6 @@ export type Profile = {
   location: string;
   email: string;
   profileImage: string;
-  resume: DownloadLink;
   summary: string;
   socialLinks: ExternalLink[];
 };
