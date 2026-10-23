@@ -9,7 +9,7 @@ import { gallery } from '../../data/gallery'
 function originals(dir:string):string[]{return readdirSync(dir,{withFileTypes:true}).flatMap(entry=>entry.isDirectory()?originals(join(dir,entry.name)):/\.(heic|png|jpe?g|pdf)$/i.test(entry.name)?[join(dir,entry.name)]:[])}
 describe('complete Evidence Folder coverage',()=>{
  it('maps every original file to exactly one visible evidence entry',()=>{
-  const inputs=originals(resolve('Evidence Folder')).map(p=>relative(process.cwd(),p)).sort()
+  const inputs=originals(resolve('src/assets/evidence/originals')).map(p=>relative(process.cwd(),p)).sort()
   expect(inputs).toHaveLength(12)
   expect(evidence.map(e=>e.sourcePath).sort()).toEqual(inputs)
   expect(new Set(evidence.map(e=>e.sourcePath)).size).toBe(12)

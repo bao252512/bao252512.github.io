@@ -20,7 +20,7 @@ The hero signal field, satellite input controls, ensemble workflow and process t
 
 All continuous animation can be paused with the header control and respects the system reduced-motion preference. Project routes retain #/journal/flood-mapping and #/journal/flood-prediction. Native anchors navigate the rest of the page. Evidence uses a keyboard-accessible native dialog.
 
-Source materials remain unchanged outside public assets. The full Evidence Folder is represented: eight documents and four photographs, tracked by src/data/evidence.ts. Originals remain unchanged. Scholarship offers and eligibility are distinct from university attendance. See aidlc-docs for source provenance and workflow history; the immutable audit is excluded from the application bundle.
+Original evidence sources are preserved in `src/assets/evidence/originals/`, alongside the optimized website assets in `src/assets/evidence/`. The full evidence collection is represented: eight documents and four photographs, tracked by src/data/evidence.ts. Originals remain unchanged. Scholarship offers and eligibility are distinct from university attendance. See aidlc-docs for source provenance and workflow history; the immutable audit is excluded from the application bundle.
 
 ## Publishing
 

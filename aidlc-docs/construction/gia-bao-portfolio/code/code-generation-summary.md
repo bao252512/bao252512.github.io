@@ -57,3 +57,9 @@ Coverage report: evidence-coverage.md. Source hashes are recorded and regression
 Verification: 32 tests pass in five files; TypeScript/Vite production build passes. Browser checks opened all eight document dialogs, decoded both PDF page previews, browsed all four photographs and received HTTP 200 for all 12 evidence files. No runtime errors or horizontal overflow at 320/390/768/1440 pixels. Native image/PDF original links remain usable. Main JavaScript is about 365 kB (115 kB gzip).
 
 Cleanup removed 49 empty obsolete directories under src and aidlc-docs, plus Finder metadata. See folder-cleanup.md. Active code, source materials, rules, audit and installed tooling remain. Current screenshots: /tmp/gia-bao-complete-evidence.png and /tmp/gia-bao-complete-photos.png. No commits, push or deployment performed. Both disabled extensions remain N/A. Formal result approval/Build and Test instruction stage still pending.
+
+## Readability revision
+
+Enlarged small typography in place: main body copy generally 16–17px, navigation and award titles 16px, evidence captions 12px, with larger labels, controls and case-study prose. Existing large display headings retained. Responsive sections stack earlier, process tabs use two columns on mobile and small labels wrap rather than shrink. Award/evidence cards remain level.
+
+Validation: 32 existing tests pass and final production build passes. Browser checks at 320, 390, 768, 1024 and 1440px show no horizontal overflow or runtime exceptions. All four process tabs have unclipped text at 320px; evidence modal and flood case study fit at 320px. Desktop and mobile screenshots visually reviewed. Security Baseline/PBT N/A (disabled).

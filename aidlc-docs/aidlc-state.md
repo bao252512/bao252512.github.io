@@ -52,3 +52,19 @@ Application files remain at the workspace root; workflow documentation remains i
 - [x] Production build passed; browser checks at 320, 390, 768 and 1440 pixels found no horizontal overflow or runtime exceptions. Desktop screenshot visually reviewed.
 
 Code Generation result review remains the active stage. Security Baseline and PBT N/A (disabled).
+
+## Evidence assets consolidation
+
+- [x] All 12 original files moved unchanged into src/assets/evidence/originals; root Evidence Folder removed by the move.
+- [x] Manifest, coverage tests and current documentation updated.
+- [x] All 32 tests and production build pass. Optimized website assets remain in use.
+
+The original 58.29 MiB ZIP was removed in commit 953af6c and remains recoverable from cbf6652. No archive restoration, commits or publishing performed. Code Generation result review remains active. Extension compliance N/A: Security Baseline and PBT disabled.
+
+## Larger typography revision
+
+- [x] Increased small text across the site, including navigation, descriptions, labels, awards, evidence captions and case studies.
+- [x] Adapted tablet stacking, mobile tabs and text wrapping.
+- [x] 32 tests and final build passed; browser checks at five widths from 320 to 1440px passed, including process tabs, evidence modal and case-study text.
+
+Current stage remains Code Generation result review. Extension compliance N/A (both disabled).

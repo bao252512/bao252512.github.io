@@ -9492,3 +9492,41 @@ Your AI-DLC [Code Generation rules](/Users/nhamhhung/bao252512.github.io/.aidlc-
 **Context**: Requested layout revision completed; current Code Generation result review retained.
 
 ---
+
+## Code Generation — Evidence assets consolidation
+**Timestamp**: 2026-10-23T11:49:29Z
+**User Input**: "which large file is it, please merge evidence folder into assets as well"
+**AI Response**: "Checked file sizes and Git history. The ZIP was removed in commit 953af6c and remains recoverable from cbf6652. Consolidating the extracted originals into src/assets/evidence/originals and updating source references."
+**Context**: Continue explicit requested file organization. ZIP size in history: 61,125,984 bytes (58.29 MiB); largest current original is LOK00081.jpg (16.57 MiB). No archive restored or Git history rewritten.
+
+---
+
+## Code Generation — Evidence assets consolidation
+**Timestamp**: 2026-10-23T11:49:29Z
+**User Input**: "where is the zip file?"
+**AI Response**: "Checked file sizes and Git history. The ZIP was removed in commit 953af6c and remains recoverable from cbf6652. Consolidating the extracted originals into src/assets/evidence/originals and updating source references."
+**Context**: Continue explicit requested file organization. ZIP size in history: 61,125,984 bytes (58.29 MiB); largest current original is LOK00081.jpg (16.57 MiB). No archive restored or Git history rewritten.
+
+---
+
+## Code Generation — Consolidation complete
+**Timestamp**: 2026-10-23T11:49:46Z
+**AI Response**: "All 12 originals moved byte-for-byte into src/assets/evidence/originals; manifest, tests and documentation updated. All 32 tests and production build passed. The 58.29 MiB ZIP is absent from the working folder but recoverable from Git commit cbf6652. Largest current source: LOK00081.jpg, 16.57 MiB."
+**Context**: Explicit requested assets merge complete. Disabled extensions skipped (N/A). No new approval gate required for the requested revision.
+
+---
+
+## Code Generation — Readability revision
+**Timestamp**: 2026-10-23T11:52:36Z
+**User Input**: "please also increase the font size to make the page easier to see"
+**AI Response**: "I’ll increase the text sizes across the page, focusing on navigation, descriptions, labels, and evidence captions, then check that the layouts still fit on desktop and mobile."
+**Context**: Explicit readability revision to current presentation. Enlarge small typography in place and adapt crowded layouts. Disabled extensions skipped; N/A.
+
+---
+
+## Code Generation — Readability verification complete
+**Timestamp**: 2026-10-23T11:55:32Z
+**AI Response**: "Increased text sizes across the page and adapted responsive layouts. Body copy is generally 16–17px, navigation/award titles 16px, and evidence captions 12px. All 32 existing tests and final build pass. Browser checks at 320, 390, 768, 1024 and 1440px show no horizontal overflow or runtime exceptions. All four process panels, evidence modal and case-study page checked at 320px. Desktop/mobile screenshots visually reviewed."
+**Context**: Explicit revision complete. First preview launch approval review timed out; the permitted retry succeeded. No outstanding approval block. Disabled extension compliance N/A. Local preview processes stopped after validation.
+
+---

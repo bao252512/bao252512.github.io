@@ -51,3 +51,7 @@ Removed only empty obsolete directories. Preserved the extracted Evidence Folder
 - aidlc-docs/construction/multi-page-layout-switcher
 - aidlc-docs/construction/lightweight-tests-and-verification
 - aidlc-docs/construction/blog-section
+
+## Follow-up: Consolidated evidence assets
+
+Moved the complete root Evidence Folder into src/assets/evidence/originals at the user’s request. All 12 files retain their original bytes. The former root folder no longer exists. Source paths and source-coverage tests now use the consolidated location. The original ZIP remains only in Git history (commit cbf6652); it was not recreated.

@@ -121,3 +121,15 @@ The user explicitly requested inclusion of every Evidence Folder file and cleanu
 - [x] Expand the awards and evidence area toward the left by narrowing the introductory column and reducing the gap.
 - [x] Remove all evidence-card rotations, including hover rotation, while preserving responsive layouts.
 - [x] Verify the production build and desktop/mobile layout; update state and audit.
+
+## Requested revision: Consolidate evidence into assets
+
+- [x] Move all 12 unchanged originals into src/assets/evidence/originals and update manifest/test references.
+- [x] Update current documentation to reflect the consolidated paths.
+- [x] Run source-integrity tests and production build; record results.
+
+## Requested revision: Larger, readable typography
+
+- [x] Increase small text sizes across navigation, body copy, interactive diagrams, labels, awards, evidence and case studies.
+- [x] Adjust responsive layouts and wrapping for larger text.
+- [x] Verify desktop/mobile rendering, existing tests and production build; record results.

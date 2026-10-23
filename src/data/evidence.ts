@@ -21,7 +21,7 @@ export type EvidenceEntry = {
 export const evidence: EvidenceEntry[] = [
   {
     "id": "ielts-fighter",
-    "sourcePath": "Evidence Folder/Ielts Fighter excellent student/IMG_5383.HEIC",
+    "sourcePath": "src/assets/evidence/originals/Ielts Fighter excellent student/IMG_5383.HEIC",
     "sourceSha256": "3d1d67e2214632e5130328b679f71c8e211c883f25bfb35bab2113587e579de5",
     "category": "document",
     "format": "image",
@@ -34,7 +34,7 @@ export const evidence: EvidenceEntry[] = [
   },
   {
     "id": "samsung-campus",
-    "sourcePath": "Evidence Folder/Samsung Innovation Campus cert/IMG_5384.HEIC",
+    "sourcePath": "src/assets/evidence/originals/Samsung Innovation Campus cert/IMG_5384.HEIC",
     "sourceSha256": "f923ff689ce5da019f2fed120244298a578492ae224a13d1e9f6f6964ba9c89c",
     "category": "document",
     "format": "image",
@@ -47,7 +47,7 @@ export const evidence: EvidenceEntry[] = [
   },
   {
     "id": "cubing-participation",
-    "sourcePath": "Evidence Folder/wca NxN cert/IMG_5385.HEIC",
+    "sourcePath": "src/assets/evidence/originals/wca NxN cert/IMG_5385.HEIC",
     "sourceSha256": "f612c91d55106edfe1aea58fd7985a69908330a5c3ee07aac3f7ca9db45ca750",
     "category": "document",
     "format": "image",
@@ -60,7 +60,7 @@ export const evidence: EvidenceEntry[] = [
   },
   {
     "id": "ielts-academic",
-    "sourcePath": "Evidence Folder/IELTS/Screenshot 2026-05-26 105659.png",
+    "sourcePath": "src/assets/evidence/originals/IELTS/Screenshot 2026-05-26 105659.png",
     "sourceSha256": "c4ee8e5b81d6b23e59cf0f842a4ec442a80148387814cda7257de7d1b2a2c750",
     "category": "document",
     "format": "image",
@@ -73,7 +73,7 @@ export const evidence: EvidenceEntry[] = [
   },
   {
     "id": "sat-score",
-    "sourcePath": "Evidence Folder/SAT/Screenshot 2026-05-26 105317.png",
+    "sourcePath": "src/assets/evidence/originals/SAT/Screenshot 2026-05-26 105317.png",
     "sourceSha256": "d6a97ed66b5e7a4daf0a751c3498616529fa2cff838f0be5eec036c6bd89de5d",
     "category": "document",
     "format": "image",
@@ -86,7 +86,7 @@ export const evidence: EvidenceEntry[] = [
   },
   {
     "id": "hust-commendation",
-    "sourcePath": "Evidence Folder/Tân sinh viên K71 có thành tích xuất sắc trong kỳ tuyển sinh năm 2026/IMG_5415.HEIC",
+    "sourcePath": "src/assets/evidence/originals/Tân sinh viên K71 có thành tích xuất sắc trong kỳ tuyển sinh năm 2026/IMG_5415.HEIC",
     "sourceSha256": "b36c608469bcc770d34ebe72e1b6c4f1f4cc949c4eaec147babce666c27a602b",
     "category": "document",
     "format": "image",
@@ -99,7 +99,7 @@ export const evidence: EvidenceEntry[] = [
   },
   {
     "id": "sydney-award-eligibility",
-    "sourcePath": "Evidence Folder/Uni of Sydney scholarship/Screenshot 2026-10-08 222639.png",
+    "sourcePath": "src/assets/evidence/originals/Uni of Sydney scholarship/Screenshot 2026-10-08 222639.png",
     "sourceSha256": "c9846c5e61003c4ca4ea98862879a018685548b386239840c806134c63089b5a",
     "category": "document",
     "format": "image",
@@ -112,7 +112,7 @@ export const evidence: EvidenceEntry[] = [
   },
   {
     "id": "anu-award-offer",
-    "sourcePath": "Evidence Folder/Australia National University Scholarship/U8634572_STT_Gia Bao Do ANU International Achievement Award 240726.pdf",
+    "sourcePath": "src/assets/evidence/originals/Australia National University Scholarship/U8634572_STT_Gia Bao Do ANU International Achievement Award 240726.pdf",
     "sourceSha256": "45f85939a4a567c6f402aa0fd1c1d3cddaa9d93dd205743ce826c9008d8683f3",
     "category": "document",
     "format": "pdf",
@@ -130,7 +130,7 @@ export const evidence: EvidenceEntry[] = [
   },
   {
     "id": "community-outreach",
-    "sourcePath": "Evidence Folder/Connected World Club/LOK09983.jpg",
+    "sourcePath": "src/assets/evidence/originals/Connected World Club/LOK09983.jpg",
     "sourceSha256": "787b37912a48562f53f4813c97691fdcfd2278b03edcfbe9fb5741a315bb2d54",
     "category": "photo",
     "format": "image",
@@ -141,7 +141,7 @@ export const evidence: EvidenceEntry[] = [
   },
   {
     "id": "community-preparation",
-    "sourcePath": "Evidence Folder/Connected World Club/LOK00017.jpg",
+    "sourcePath": "src/assets/evidence/originals/Connected World Club/LOK00017.jpg",
     "sourceSha256": "33f245d895156aab6916ed842d7a3b825f00336011a99bb77d9608203c71fa5a",
     "category": "photo",
     "format": "image",
@@ -152,7 +152,7 @@ export const evidence: EvidenceEntry[] = [
   },
   {
     "id": "community-shared-moment",
-    "sourcePath": "Evidence Folder/Connected World Club/LOK00081.jpg",
+    "sourcePath": "src/assets/evidence/originals/Connected World Club/LOK00081.jpg",
     "sourceSha256": "316cfb3cc98836a31f8a3cb8e00bd9951e6d4e1194c56027ddb65511a9c85d8e",
     "category": "photo",
     "format": "image",
@@ -163,7 +163,7 @@ export const evidence: EvidenceEntry[] = [
   },
   {
     "id": "community-team",
-    "sourcePath": "Evidence Folder/Connected World Club/LOK09974.jpg",
+    "sourcePath": "src/assets/evidence/originals/Connected World Club/LOK09974.jpg",
     "sourceSha256": "bfdbd89906489943979d538c81e37aa60531e460f3b358f6da39535841b253c0",
     "category": "photo",
     "format": "image",
