@@ -114,3 +114,7 @@ Source: `Evidence Folder-20261021T175025Z-1-001.zip`. Archive inspected without 
 - `Evidence Folder/Connected World Club/LOK09974.jpg` (15436596 bytes)
 
 Some archive filenames contain damaged Unicode characters. Use stable descriptive filenames for published copies. Convert HEIC to browser-compatible images when selected. Do not imply scholarship acceptance or university attendance based only on an offer.
+
+## Current extracted source and coverage
+
+The user has replaced the original ZIP with Evidence Folder/. All 12 current files have been inspected/mapped and are represented by the live site. The source originals are unchanged. The authoritative current mapping is ../../construction/gia-bao-portfolio/code/evidence-coverage.md and src/data/evidence.ts. The original archive inventory above is historical; its ZIP was not recreated.

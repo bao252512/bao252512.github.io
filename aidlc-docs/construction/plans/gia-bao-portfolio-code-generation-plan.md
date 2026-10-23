@@ -104,3 +104,20 @@ User requested a more independent design, provided https://beetranngoclinhanh-cm
 - [x] Preserve factual claims, real case-study routes, source distinction, accessible interactions and reduced-motion support.
 - [x] Replace retired-template tests with meaningful current-user-journey checks; run build/tests and browser desktop/mobile/keyboard checks.
 - [x] Update current documentation and return to the required two-option result review.
+
+## Requested revision: Complete evidence coverage and cleanup
+
+The user explicitly requested inclusion of every Evidence Folder file and cleanup of extra folders. The source ZIP has been replaced by an extracted folder in the user workspace; preserve that user change. Current scope supersedes the earlier selected-evidence-only scope.
+
+- [x] Inventory all current source documents/photos and establish a one-to-one source-to-site manifest.
+- [x] Convert missing images with readable browser formats and include the complete original PDF.
+- [x] Display all eight documents and all four photos with accessible navigation/previews and accurate labels.
+- [x] Add a meaningful source-coverage regression check; verify build, tests and actual browser loading.
+- [x] Remove unused assets/data and empty obsolete folders while preserving user sources, active code and AI-DLC/audit.
+- [x] Update current summary/state and present the required result review.
+
+## Requested revision: Awards spacing and alignment
+
+- [x] Expand the awards and evidence area toward the left by narrowing the introductory column and reducing the gap.
+- [x] Remove all evidence-card rotations, including hover rotation, while preserving responsive layouts.
+- [x] Verify the production build and desktop/mobile layout; update state and audit.

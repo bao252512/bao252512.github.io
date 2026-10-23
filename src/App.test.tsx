@@ -70,6 +70,21 @@ describe('Gia Bao Data Atlas',()=>{
   fireEvent.click(within(dialog).getByRole('button',{name:'Close document preview'}))
   expect(screen.queryByRole('dialog')).not.toBeInTheDocument()
  })
+ it('exposes every document including both pages of the ANU offer',()=>{
+  render(<App/>);expect(screen.getByText('8 documents · complete evidence collection')).toBeInTheDocument()
+  for(const item of certificates)expect(screen.getByRole('button',{name:item.ariaLabel})).toBeInTheDocument()
+  const pdf=certificates.find(item=>item.format==='pdf')!
+  fireEvent.click(screen.getByRole('button',{name:pdf.ariaLabel}))
+  const dialog=screen.getByRole('dialog',{name:pdf.title})
+  expect(within(dialog).getAllByRole('img')).toHaveLength(2)
+  expect(within(dialog).getByRole('link',{name:'Open full PDF (2 pages) ↗'})).toHaveAttribute('href',pdf.file)
+ })
+ it('lets visitors browse all four community photos',()=>{
+  render(<App/>);const album=screen.getByRole('group',{name:'All community photographs'})
+  const buttons=within(album).getAllByRole('button');expect(buttons).toHaveLength(4)
+  for(const button of buttons){fireEvent.click(button);expect(button).toHaveAttribute('aria-pressed','true')}
+  expect(screen.getByRole('link',{name:'Open full photograph: The people behind the visit'})).toBeInTheDocument()
+ })
  it('closes the mobile navigation with Escape and restores focus',()=>{
   render(<App/>);const button=screen.getByRole('button',{name:'Explore +'});fireEvent.click(button)
   expect(button).toHaveAttribute('aria-expanded','true')
@@ -91,7 +106,7 @@ describe('Gia Bao Data Atlas',()=>{
  it('exposes precise academic values and keeps recognition expandable',()=>{
   render(<App/>);expect(screen.getByRole('img',{name:/GPA: Grade 10 9.2/})).toBeInTheDocument()
   expect(screen.getByText('1600')).toBeInTheDocument();expect(screen.getByText('8.0')).toBeInTheDocument()
-  const award=screen.getByText('ANU International Achievement Award').closest('details')!
+  const award=screen.getByText('ANU International Achievement Award',{selector:'.award-record strong'}).closest('details')!
   expect(award).not.toHaveAttribute('open')
   expect(award).toHaveTextContent('An offer, subject to conditions')
  })

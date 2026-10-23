@@ -169,6 +169,9 @@ export type SkillCategory = {
 };
 
 export type CertificateEntry = {
+  format: "image" | "pdf";
+  thumbnail: string;
+  pages?: string[];
   title: string;
   issuer: string;
   kind: string;

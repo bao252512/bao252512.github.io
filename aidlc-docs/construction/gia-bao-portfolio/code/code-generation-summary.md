@@ -47,3 +47,13 @@ Previews: /tmp/gia-bao-atlas-final-full.png, /tmp/gia-bao-atlas-final-desktop.pn
 Project experiments were not run; diagrams are explanatory. Human review and testing with assistive technology can extend the automated/browser checks. No commits, pushes or publishing were performed. The formal AI-DLC Build and Test instruction stage remains after Code Generation result approval; implementation verification above is complete.
 
 Extension compliance: Security Baseline N/A (disabled); PBT N/A (disabled). Full extension rules skipped. No applicable enabled-extension findings.
+
+## Complete-evidence revision (latest authority)
+
+The user requested every file in the extracted Evidence Folder, superseding the earlier selected-evidence-only scope. All 12 files now have one-to-one entries in src/data/evidence.ts: eight documents and four photographs. The eight-document contact sheet includes IELTS/SAT reports, Samsung, cubing, IELTS Fighter, HUST, Sydney eligibility and ANU offer. ANU retains the original two-page PDF byte for byte and has both pages in its browser image viewer. All four community photos are browsable through named thumbnail controls and full-image links.
+
+Coverage report: evidence-coverage.md. Source hashes are recorded and regression-checked; the original user files remain unchanged. The user replaced the ZIP with an extracted source folder; that change was preserved and the ZIP was not recreated. All converted images show complete source frames rather than cropped document content.
+
+Verification: 32 tests pass in five files; TypeScript/Vite production build passes. Browser checks opened all eight document dialogs, decoded both PDF page previews, browsed all four photographs and received HTTP 200 for all 12 evidence files. No runtime errors or horizontal overflow at 320/390/768/1440 pixels. Native image/PDF original links remain usable. Main JavaScript is about 365 kB (115 kB gzip).
+
+Cleanup removed 49 empty obsolete directories under src and aidlc-docs, plus Finder metadata. See folder-cleanup.md. Active code, source materials, rules, audit and installed tooling remain. Current screenshots: /tmp/gia-bao-complete-evidence.png and /tmp/gia-bao-complete-photos.png. No commits, push or deployment performed. Both disabled extensions remain N/A. Formal result approval/Build and Test instruction stage still pending.

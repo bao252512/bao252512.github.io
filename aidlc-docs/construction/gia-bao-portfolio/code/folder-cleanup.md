@@ -1,0 +1,53 @@
+# Extra folder cleanup
+
+Removed only empty obsolete directories. Preserved the extracted Evidence Folder, original user inputs, active code, installed dependencies, build tooling, rule files and immutable audit. The user-removed ZIP was not recreated.
+
+- src/assets/certificates
+- src/assets/documents
+- aidlc-docs/construction/student-documentation/nfr-design
+- aidlc-docs/construction/student-documentation/code
+- aidlc-docs/construction/student-documentation/nfr-requirements
+- aidlc-docs/construction/student-documentation/functional-design
+- aidlc-docs/construction/student-documentation/infrastructure-design
+- aidlc-docs/construction/journal-inline-posts/code
+- aidlc-docs/construction/journal-inline-posts/functional-design
+- aidlc-docs/construction/template-data-and-shared-types/nfr-design
+- aidlc-docs/construction/template-data-and-shared-types/code
+- aidlc-docs/construction/template-data-and-shared-types/nfr-requirements
+- aidlc-docs/construction/template-data-and-shared-types/functional-design
+- aidlc-docs/construction/template-data-and-shared-types/infrastructure-design
+- aidlc-docs/construction/github-pages-deployment-configuration/nfr-design
+- aidlc-docs/construction/github-pages-deployment-configuration/code
+- aidlc-docs/construction/github-pages-deployment-configuration/nfr-requirements
+- aidlc-docs/construction/github-pages-deployment-configuration/functional-design
+- aidlc-docs/construction/github-pages-deployment-configuration/infrastructure-design
+- aidlc-docs/construction/component-refactor-and-shared-ui-utilities/nfr-design
+- aidlc-docs/construction/component-refactor-and-shared-ui-utilities/code
+- aidlc-docs/construction/component-refactor-and-shared-ui-utilities/nfr-requirements
+- aidlc-docs/construction/component-refactor-and-shared-ui-utilities/functional-design
+- aidlc-docs/construction/component-refactor-and-shared-ui-utilities/infrastructure-design
+- aidlc-docs/construction/business-youthful-color-refresh/code
+- aidlc-docs/construction/multi-page-layout-switcher/nfr-design
+- aidlc-docs/construction/multi-page-layout-switcher/code
+- aidlc-docs/construction/multi-page-layout-switcher/nfr-requirements
+- aidlc-docs/construction/multi-page-layout-switcher/functional-design
+- aidlc-docs/construction/lightweight-tests-and-verification/nfr-design
+- aidlc-docs/construction/lightweight-tests-and-verification/code
+- aidlc-docs/construction/lightweight-tests-and-verification/nfr-requirements
+- aidlc-docs/construction/lightweight-tests-and-verification/functional-design
+- aidlc-docs/construction/lightweight-tests-and-verification/infrastructure-design
+- aidlc-docs/construction/blog-section/code
+- aidlc-docs/inception/application-design/journal-inline-posts
+- aidlc-docs/inception/application-design/multi-page-layout-switcher
+- aidlc-docs/inception/application-design/runtime-template-selector
+- aidlc-docs/inception/application-design
+- aidlc-docs/construction/student-documentation
+- aidlc-docs/construction/journal-inline-posts
+- aidlc-docs/construction/build-and-test
+- aidlc-docs/construction/template-data-and-shared-types
+- aidlc-docs/construction/github-pages-deployment-configuration
+- aidlc-docs/construction/component-refactor-and-shared-ui-utilities
+- aidlc-docs/construction/business-youthful-color-refresh
+- aidlc-docs/construction/multi-page-layout-switcher
+- aidlc-docs/construction/lightweight-tests-and-verification
+- aidlc-docs/construction/blog-section

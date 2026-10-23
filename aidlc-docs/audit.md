@@ -9461,3 +9461,34 @@ Your AI-DLC [Code Generation rules](/Users/nhamhhung/bao252512.github.io/.aidlc-
 **Context**: CONSTRUCTION - Request Changes implemented. Native React runtime, editorial CSS/SVG interaction system, no public document downloads/wording; source inputs/audit preserved. Retired 48 legacy presentation files. 27/27 current tests and TypeScript/Vite build pass; main JS 359kB instead of 934kB. Browser widths 320–1920, project routes, tab keyboard, actual menu pointer/Escape, evidence focus, paused/reduced motion and final static academic bars checked. Fixed entrance-state visibility under paused motion. Markdown parser method named resume excluded from public-wording scan; authored content and actual DOM checked instead. No commit/push/deployment. Disabled extension rules skipped, compliance N/A. Plan checkboxes and current artifacts updated; formal Build and Test still awaits result approval.
 
 ---
+
+## Complete Evidence Coverage Requested
+**Timestamp**: 2026-10-22T13:40:34Z
+**User Input**: "did you make sure you have included all the evidence from Evidence Folder? Please ensure you have all that and clean up extra folders after you're done"
+**AI Response**: "Checking every current source file. Previous public presentation contained three certificates and one photo; current extracted folder contains eight documents and four photos. Adding every missing source, preserving the user extraction/deletion change, then removing unused/empty folders. This explicit revision authorizes complete evidence coverage; original inputs remain intact. Extensions remain disabled; full rules skipped."
+**Context**: CONSTRUCTION - Request Changes, complete-evidence plan amendment.
+
+---
+
+## Complete Evidence Coverage - Verification and Cleanup Complete
+**Timestamp**: 2026-10-22T13:48:33Z
+**User Input**: "N/A"
+**AI Response**: "All 12 Evidence Folder files are included: eight documents and all four community photos. The ANU offer includes both pages and the complete PDF. Removed 49 empty obsolete folders and preserved the original sources. File-by-file coverage and SHA-256 tests, all document/photo browser checks, and the production build pass: 32 tests. Code Generation review remains Request Changes or Continue to Next Stage before formal Build and Test, per construction/code-generation.md Step 15; disabled extension compliance N/A."
+**Context**: CONSTRUCTION - Current source folder replaces ZIP (user change preserved). All 12 source files mapped and original hashes checked; eight documents including exact two-page PDF and four photos displayed. 32/32 tests and build pass. Browser opened all eight dialogs, loaded both PDF preview pages, browsed all photos, fetched all 12 assets with HTTP 200, no exceptions or 320–1440px overflow. Removed 49 empty legacy folders plus metadata; kept originals, active code and audit. No commit/push/deploy. Plan checkboxes/state/coverage report updated. Security/PBT disabled, full rules skipped; compliance N/A.
+
+---
+
+## Code Generation — Awards layout revision
+**Timestamp**: 2026-10-23T10:50:24Z
+**User Input**: "please add more space for the awards on the left, and make none of them slanted"
+**AI Response**: "I’ll give the awards and evidence column more room on the left and straighten all the evidence cards."
+**Context**: Requested changes to current implementation; screenshot shows rotated evidence cards. Narrow the introductory rail to give the award records more horizontal space. Security Baseline and PBT skipped because disabled; compliance N/A.
+
+---
+
+## Code Generation — Awards revision verification
+**Timestamp**: 2026-10-23T10:51:17Z
+**AI Response**: "Expanded the awards/evidence area toward the left and removed card rotations. Production build passed. Browser checks at 320, 390, 768 and 1440 pixels confirmed all eight cards have no rotation, no horizontal overflow and no runtime exceptions. Screenshot visually reviewed at /tmp/gia-bao-awards-spaced.png. Original evidence files preserved. Extension compliance N/A: both extensions disabled."
+**Context**: Requested layout revision completed; current Code Generation result review retained.
+
+---
