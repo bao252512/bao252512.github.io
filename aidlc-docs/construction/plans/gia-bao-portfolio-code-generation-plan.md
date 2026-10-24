@@ -144,6 +144,6 @@ The user explicitly requested inclusion of every Evidence Folder file and cleanu
 ## Requested revision: Remove documents from older commits
 
 - [x] Inspect remote refs, identify all historical file paths and verify private copies.
-- [ ] Back up original history privately and rewrite a separate clean clone to remove the four documents, duplicate blobs and containing ZIP.
-- [ ] Verify every retained commit is clean and current application tree is unchanged, then force-update main with an explicit lease.
-- [ ] Synchronize the workspace, verify a fresh remote clone and paused hosting, and record cache/clone cleanup limitations.
+- [x] Back up original history privately and rewrite a separate clean clone to remove the four documents, duplicate blobs and containing ZIP.
+- [x] Verify every retained commit is clean and current application tree is unchanged, then force-update main with an explicit lease.
+- [x] Synchronize the workspace, verify a fresh remote clone and paused hosting, and record cache/clone cleanup limitations.

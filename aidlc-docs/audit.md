@@ -9576,3 +9576,10 @@ Your AI-DLC [Code Generation rules](/Users/nhamhhung/bao252512.github.io/.aidlc-
 **Context**: Explicit authorization to rewrite and force-update historical commits. Remote has one branch (main), no tags or pull-request refs; Pages workflow remains disabled. Identified 15 historical paths for four originals, previews and the containing ZIP. Private copies verified outside repository. Use a lease to avoid replacing concurrent work. GitHub cache/server garbage collection may require GitHub Support.
 
 ---
+
+## Historical removal verification
+**Timestamp**: 2026-10-24T17:59:34Z
+**AI Response**: "Rewrote all seven retained commits and force-updated main with an explicit lease. A fresh GitHub mirror verifies all 15 historical paths and ten private document/archive blobs absent from every retained commit. Application tree unchanged. Site remains paused and workflow disabled. Original documents and recovery bundle are private outside the repository. An old raw document URL still returns 200 from GitHub cache; a private Support request is prepared for the remaining server purge."
+**Context**: User-authorized history rewrite complete for published refs. Cached/unreachable copies require GitHub Support; no external message sent. Collaborators must re-clone to avoid reintroducing history. Security Baseline/PBT N/A (disabled).
+
+---

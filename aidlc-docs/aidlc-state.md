@@ -80,3 +80,14 @@ Current stage remains Code Generation result review. Extension compliance N/A (b
 site-status.json paused flag defaults to true; default build contains only maintenance HTML/robots with no portfolio assets. Extension compliance N/A (disabled). Existing Git history is not rewritten.
 
 Shutdown deployed in commit 8effdf1 through successful Pages run 40080352430. Live page verified as temporary-unavailable HTML without portfolio scripts. All four prior document asset URLs return 404, current GitHub tree contains no withdrawn originals/previews, and two old Pages artifacts were deleted. Workflow state verified disabled_manually after deployment. Restoration instructions are in DEPLOYMENT.md. Native unpublish requires an administrator; the hosted maintenance page remains available. Older Git history still contains prior copies.
+
+## Historical document removal — 25 October 2026
+
+- [x] Explicit user request authorizes history rewrite.
+- [x] Original history recovery bundle and ten private files preserved outside repository.
+- [x] Seven commits rewritten; all 15 historical paths and ten distinct document/archive blobs removed.
+- [x] main updated with force-with-lease; workspace synchronized.
+- [x] Fresh GitHub mirror verified every retained commit and unchanged application tree; site still paused, workflow disabled.
+- [x] Private GitHub Support request prepared for remaining cached old URLs.
+
+Published history no longer contains the documents or ZIP. One cached old document URL still returns 200; GitHub Support cache/unreachable-object purge remains external work, not completed. See construction/gia-bao-portfolio/code/history-cleanup.md. Disabled extensions N/A.
