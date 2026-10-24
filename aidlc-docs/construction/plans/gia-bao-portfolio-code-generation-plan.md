@@ -133,3 +133,10 @@ The user explicitly requested inclusion of every Evidence Folder file and cleanu
 - [x] Increase small text sizes across navigation, body copy, interactive diagrams, labels, awards, evidence and case studies.
 - [x] Adjust responsive layouts and wrapping for larger text.
 - [x] Verify desktop/mobile rendering, existing tests and production build; record results.
+
+## Requested revision: Temporary shutdown and exam-document privacy
+
+- [ ] Disable automatic deployment and replace the live portfolio with a document-free unavailable page (unpublish requires unavailable admin permission); verify hosting status.
+- [x] Preserve exam originals/previews outside repository and remove IELTS Academic, SAT, Sydney and ANU documents from public evidence while retaining result mentions.
+- [x] Update coverage tests/documentation and verify build excludes withheld files/details.
+- [ ] Publish the document removals to GitHub and verify remote files absent; record history limitations and restoration instructions.

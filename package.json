@@ -6,9 +6,10 @@
   "scripts": {
     "dev": "vite",
     "test": "vitest run",
-    "build": "tsc -b && vite build",
+    "build": "tsc -b && node scripts/build-site.mjs",
     "lint": "eslint .",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "build:portfolio": "tsc -b && vite build"
   },
   "dependencies": {
     "@chakra-ui/icons": "^2.2.4",

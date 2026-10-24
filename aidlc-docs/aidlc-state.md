@@ -68,3 +68,13 @@ The original 58.29 MiB ZIP was removed in commit 953af6c and remains recoverable
 - [x] 32 tests and final build passed; browser checks at five widths from 320 to 1440px passed, including process tabs, evidence modal and case-study text.
 
 Current stage remains Code Generation result review. Extension compliance N/A (both disabled).
+
+## Temporary shutdown and four withheld documents
+
+- [x] Workflow paused initially; Pages unpublish API returned 404 because current account lacks repository admin permission.
+- [x] Four documents and ten source/preview files removed from current working tree and public evidence: IELTS Academic, SAT, Sydney eligibility and ANU offer. Score/recognition mentions retained.
+- [x] Private byte-identical copies preserved at /Users/nhamhhung/gia-bao-private-evidence outside the repository.
+- [x] All 32 tests, unpublished portfolio build and paused production build pass; output excludes the four documents and detailed score breakdowns.
+- [ ] Publish the temporary-unavailable page, verify live output and removed GitHub files, then pause deployment again.
+
+site-status.json paused flag defaults to true; default build contains only maintenance HTML/robots with no portfolio assets. Extension compliance N/A (disabled). Existing Git history is not rewritten.

@@ -24,7 +24,7 @@ describe('Data Atlas source-grounded content',()=>{
  it('preserves the distinction between scholarship offer and eligibility',()=>{
   expect(portfolio.awards.find(a=>a.logoText==='ANU')?.tag).toBe('SCHOLARSHIP OFFER')
   expect(portfolio.awards.find(a=>a.logoText==='SYD')?.description).toContain('Eligibility is not an award offer')
-  expect(portfolio.certificates).toHaveLength(8)
+  expect(portfolio.certificates).toHaveLength(4)
  })
  it('contains no inherited identity or document references in public content',()=>{
   expect(JSON.stringify(portfolio)).not.toMatch(/nhamhung|Nham Quoc Hung|Torilab|r[e]sum[e]/i)

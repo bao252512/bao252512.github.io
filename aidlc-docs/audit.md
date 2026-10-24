@@ -9530,3 +9530,34 @@ Your AI-DLC [Code Generation rules](/Users/nhamhhung/bao252512.github.io/.aidlc-
 **Context**: Explicit revision complete. First preview launch approval review timed out; the permitted retry succeeded. No outstanding approval block. Disabled extension compliance N/A. Local preview processes stopped after validation.
 
 ---
+
+## Temporary shutdown and document privacy
+**Timestamp**: 2026-10-24T08:59:19Z
+**User Input**: "please temporarily shutdown the website and hide ielts certificate details"
+**AI Response**: "Unpublish GitHub Pages and pause deployment; remove IELTS Academic and SAT reports/previews from site and current GitHub files while retaining score mentions. Preserve local copies outside repository. Existing Git history may retain originals."
+**Context**: Explicit authorization to take the website offline and remove exam documents from current GitHub files; no history rewrite authorized.
+
+---
+
+## Temporary shutdown and document privacy
+**Timestamp**: 2026-10-24T08:59:19Z
+**User Input**: "please hide the SAT cert as well, just mention it but don't publish the document. Remove it from github too"
+**AI Response**: "Unpublish GitHub Pages and pause deployment; remove IELTS Academic and SAT reports/previews from site and current GitHub files while retaining score mentions. Preserve local copies outside repository. Existing Git history may retain originals."
+**Context**: Explicit authorization to take the website offline and remove exam documents from current GitHub files; no history rewrite authorized.
+
+---
+
+## Document removal scope update
+**Timestamp**: 2026-10-24T09:01:07Z
+**User Input**: "please also remove these 4 certs from the website "
+**AI Response**: "Remove the four screenshot documents: IELTS Academic, SAT, Sydney eligibility and ANU offer; retain text mentions. Preserve private local copies outside repository."
+**Context**: User attached a screenshot identifying the four documents. Pages unpublish API rejected with 404 because connected account has push but no admin permission. Workflow is disabled; replace published artifact with a document-free temporary-unavailable page, then disable workflow again.
+
+---
+
+## Shutdown preparation verification
+**Timestamp**: 2026-10-24T09:01:42Z
+**AI Response**: "Removed the four requested documents, their previews and detailed descriptions. Kept text results/recognition. Preserved ten original/preview files privately outside repository. All 32 tests pass; portfolio build excludes private documents and score breakdowns. Default production build now produces only a temporary-unavailable page. GitHub Pages unpublish returned 404; authenticated account has push but no admin permission, so publish the safe paused artifact instead."
+**Context**: Ready to commit and push the explicitly requested removal/shutdown changes. Historical Git copies remain; no force-push or history rewrite.
+
+---

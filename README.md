@@ -20,8 +20,8 @@ The hero signal field, satellite input controls, ensemble workflow and process t
 
 All continuous animation can be paused with the header control and respects the system reduced-motion preference. Project routes retain #/journal/flood-mapping and #/journal/flood-prediction. Native anchors navigate the rest of the page. Evidence uses a keyboard-accessible native dialog.
 
-Original evidence sources are preserved in `src/assets/evidence/originals/`, alongside the optimized website assets in `src/assets/evidence/`. The full evidence collection is represented: eight documents and four photographs, tracked by src/data/evidence.ts. Originals remain unchanged. Scholarship offers and eligibility are distinct from university attendance. See aidlc-docs for source provenance and workflow history; the immutable audit is excluded from the application bundle.
+Selected original evidence sources remain in `src/assets/evidence/originals/`, alongside optimized website assets in `src/assets/evidence/`. Four documents and four photographs are public. IELTS Academic, SAT, Sydney eligibility and ANU offer documents/previews are withheld; their text mentions remain. Private copies are kept outside this repository. Earlier Git commits may still contain these documents. Scholarship offers and eligibility remain distinct from attendance.
 
 ## Publishing
 
-The existing GitHub Pages workflow builds dist and derives the repository base path. See DEPLOYMENT.md. No publishing, commits or pushes are part of this local revision.
+The site is temporarily paused via `site-status.json` (`paused: true`). `npm run build` produces only a temporary-unavailable page, with no portfolio JavaScript or documents. `npm run build:portfolio` is for local review of the unpublished portfolio. To restore the site after approval, set `paused` to `false`, re-enable the Pages workflow and run deployment. The prior workflow was paused during the shutdown request.

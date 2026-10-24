@@ -70,14 +70,11 @@ describe('Gia Bao Data Atlas',()=>{
   fireEvent.click(within(dialog).getByRole('button',{name:'Close document preview'}))
   expect(screen.queryByRole('dialog')).not.toBeInTheDocument()
  })
- it('exposes every document including both pages of the ANU offer',()=>{
-  render(<App/>);expect(screen.getByText('8 documents · complete evidence collection')).toBeInTheDocument()
+ it('shows selected evidence while withholding all four private reports',()=>{
+  render(<App/>);expect(screen.getByText('4 documents · selected evidence')).toBeInTheDocument()
   for(const item of certificates)expect(screen.getByRole('button',{name:item.ariaLabel})).toBeInTheDocument()
-  const pdf=certificates.find(item=>item.format==='pdf')!
-  fireEvent.click(screen.getByRole('button',{name:pdf.ariaLabel}))
-  const dialog=screen.getByRole('dialog',{name:pdf.title})
-  expect(within(dialog).getAllByRole('img')).toHaveLength(2)
-  expect(within(dialog).getByRole('link',{name:'Open full PDF (2 pages) ↗'})).toHaveAttribute('href',pdf.file)
+  for(const name of [/IELTS Academic score report/,/SAT score report/,/Sydney award eligibility/,/Open ANU International Achievement Award/])expect(screen.queryByRole('button',{name})).not.toBeInTheDocument()
+  expect(screen.getByText('1600')).toBeInTheDocument();expect(screen.getByText('8.0')).toBeInTheDocument()
  })
  it('lets visitors browse all four community photos',()=>{
   render(<App/>);const album=screen.getByRole('group',{name:'All community photographs'})
