@@ -75,6 +75,8 @@ Current stage remains Code Generation result review. Extension compliance N/A (b
 - [x] Four documents and ten source/preview files removed from current working tree and public evidence: IELTS Academic, SAT, Sydney eligibility and ANU offer. Score/recognition mentions retained.
 - [x] Private byte-identical copies preserved at /Users/nhamhhung/gia-bao-private-evidence outside the repository.
 - [x] All 32 tests, unpublished portfolio build and paused production build pass; output excludes the four documents and detailed score breakdowns.
-- [ ] Publish the temporary-unavailable page, verify live output and removed GitHub files, then pause deployment again.
+- [x] Publish the temporary-unavailable page, verify live output and removed GitHub files, then pause deployment again.
 
 site-status.json paused flag defaults to true; default build contains only maintenance HTML/robots with no portfolio assets. Extension compliance N/A (disabled). Existing Git history is not rewritten.
+
+Shutdown deployed in commit 8effdf1 through successful Pages run 40080352430. Live page verified as temporary-unavailable HTML without portfolio scripts. All four prior document asset URLs return 404, current GitHub tree contains no withdrawn originals/previews, and two old Pages artifacts were deleted. Workflow state verified disabled_manually after deployment. Restoration instructions are in DEPLOYMENT.md. Native unpublish requires an administrator; the hosted maintenance page remains available. Older Git history still contains prior copies.

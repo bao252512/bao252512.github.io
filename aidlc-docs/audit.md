@@ -9561,3 +9561,10 @@ Your AI-DLC [Code Generation rules](/Users/nhamhhung/bao252512.github.io/.aidlc-
 **Context**: Ready to commit and push the explicitly requested removal/shutdown changes. Historical Git copies remain; no force-push or history rewrite.
 
 ---
+
+## Shutdown and document-removal completion
+**Timestamp**: 2026-10-24T09:03:57Z
+**AI Response**: "The live URL now shows Temporarily unavailable. Automatic deployment is disabled again. IELTS Academic, SAT, Sydney eligibility and ANU offer originals/previews were removed from current GitHub files in commit 8effdf1. All four old document asset URLs return 404. Two old Pages artifacts were deleted. Scores and recognition mentions remain in the unpublished portfolio. Private local copies are preserved outside the repository. Older Git history still retains copies."
+**Context**: Successful deployment run 40080352430. Actual native unpublish was blocked by lack of repository admin rights, resolved with a safe static maintenance deployment. All authorized work completed without history rewriting. Restoration instructions in DEPLOYMENT.md. Security Baseline and PBT N/A (disabled).
+
+---
