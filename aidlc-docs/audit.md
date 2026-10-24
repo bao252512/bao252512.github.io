@@ -9568,3 +9568,11 @@ Your AI-DLC [Code Generation rules](/Users/nhamhhung/bao252512.github.io/.aidlc-
 **Context**: Successful deployment run 40080352430. Actual native unpublish was blocked by lack of repository admin rights, resolved with a safe static maintenance deployment. All authorized work completed without history rewriting. Restoration instructions in DEPLOYMENT.md. Security Baseline and PBT N/A (disabled).
 
 ---
+
+## Historical document removal
+**Timestamp**: 2026-10-24T17:57:06Z
+**User Input**: "please remove from older commits"
+**AI Response**: "I’ll remove the four documents from Git history, including the old ZIP that contained them, while keeping the website paused and preserving the private local copies."
+**Context**: Explicit authorization to rewrite and force-update historical commits. Remote has one branch (main), no tags or pull-request refs; Pages workflow remains disabled. Identified 15 historical paths for four originals, previews and the containing ZIP. Private copies verified outside repository. Use a lease to avoid replacing concurrent work. GitHub cache/server garbage collection may require GitHub Support.
+
+---

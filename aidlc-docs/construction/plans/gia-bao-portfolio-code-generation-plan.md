@@ -140,3 +140,10 @@ The user explicitly requested inclusion of every Evidence Folder file and cleanu
 - [x] Preserve exam originals/previews outside repository and remove IELTS Academic, SAT, Sydney and ANU documents from public evidence while retaining result mentions.
 - [x] Update coverage tests/documentation and verify build excludes withheld files/details.
 - [x] Publish the document removals to GitHub and verify remote files absent; record history limitations and restoration instructions.
+
+## Requested revision: Remove documents from older commits
+
+- [x] Inspect remote refs, identify all historical file paths and verify private copies.
+- [ ] Back up original history privately and rewrite a separate clean clone to remove the four documents, duplicate blobs and containing ZIP.
+- [ ] Verify every retained commit is clean and current application tree is unchanged, then force-update main with an explicit lease.
+- [ ] Synchronize the workspace, verify a fresh remote clone and paused hosting, and record cache/clone cleanup limitations.

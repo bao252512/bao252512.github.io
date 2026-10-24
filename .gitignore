@@ -22,3 +22,19 @@ dist-ssr
 *.njsproj
 *.sln
 *.sw?
+
+# Withdrawn private documents: keep originals/previews outside this repository.
+/Evidence Folder-20261021T175025Z-1-001.zip
+/Evidence Folder/IELTS/
+/Evidence Folder/SAT/
+/Evidence Folder/Uni of Sydney scholarship/
+/Evidence Folder/Australia National University Scholarship/
+/src/assets/evidence/ielts-academic.webp
+/src/assets/evidence/sat-score.webp
+/src/assets/evidence/sydney-award-eligibility.webp
+/src/assets/evidence/anu-award-offer.pdf
+/src/assets/evidence/anu-award-page-*.webp
+/src/assets/evidence/originals/IELTS/
+/src/assets/evidence/originals/SAT/
+/src/assets/evidence/originals/Uni of Sydney scholarship/
+/src/assets/evidence/originals/Australia National University Scholarship/
