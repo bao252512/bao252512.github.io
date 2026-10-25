@@ -12,3 +12,7 @@ GitHub procedure: https://docs.github.com/en/authentication/keeping-your-account
 Support portal: https://support.github.com/contact
 
 First changed commit reported by git-filter-repo: 71b795f867dc9c9781c860d4ed00d7629c7a0f01. No pull-request refs were advertised by the remote; no Git LFS objects were in use. Cache deletion, other clones and copies outside the repository cannot be completed through force-pushing.
+
+## Restoration verification — 25 October 2026
+
+The cleaned portfolio is live again, with its withdrawal rules unchanged. The four former website document URLs return 404. All four cached raw GitHub document URLs were rechecked and return 200, so server/cache purging remains required. The private Support draft now includes all four exact cached URLs. No Support request has been sent.

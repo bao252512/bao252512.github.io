@@ -91,3 +91,13 @@ Shutdown deployed in commit 8effdf1 through successful Pages run 40080352430. Li
 - [x] Private GitHub Support request prepared for remaining cached old URLs.
 
 Published history no longer contains the documents or ZIP. One cached old document URL still returns 200; GitHub Support cache/unreachable-object purge remains external work, not completed. See construction/gia-bao-portfolio/code/history-cleanup.md. Disabled extensions N/A.
+
+## Cleaned website restored — 25 October 2026
+
+- [x] User-authorized restoration, site-status.json paused=false.
+- [x] All 32 tests and production build pass; excluded-document/privacy scan passes.
+- [x] Commit b618cd7 deployed successfully in Pages run 40166382544; workflow active.
+- [x] Live JavaScript matches the verified build, all eight retained images load, four old website document URLs return 404.
+- [x] Private Support request updated with all four old raw GitHub URLs, each still returning 200.
+
+Website restored at https://bao252512.github.io/. The four documents remain absent from the site, current files and published Git history. Complete web removal is not achieved: GitHub cached pre-rewrite copies remain accessible and require Support purge. Request is ready privately at /Users/nhamhhung/gia-bao-private-evidence/github-support-request.md and has not been submitted. Extension compliance N/A (disabled).

@@ -9591,3 +9591,10 @@ Your AI-DLC [Code Generation rules](/Users/nhamhhung/bao252512.github.io/.aidlc-
 **Context**: User explicitly authorizes restoration and deployment. Keep four documents absent from current files, builds and published history. Complete cache removal remains subject to GitHub Support, with draft already prepared privately; do not claim full web erasure.
 
 ---
+
+## Cleaned restoration verified
+**Timestamp**: 2026-10-25T05:42:41Z
+**AI Response**: "Restored https://bao252512.github.io/ through successful Pages run 40166382544. Verified live JavaScript matches the cleaned build; all eight retained images load and four removed website document URLs return 404. All 32 tests and production build pass. Text mentions remain. All four old raw GitHub URLs still return 200; updated private Support draft with exact links. Complete web removal remains pending GitHub Support purge; no message submitted."
+**Context**: User-authorized restoration completed. Current site/files/history exclude withdrawn material. Remaining cached server copies cannot be purged through repository writes. Extension compliance N/A (disabled).
+
+---

@@ -152,5 +152,5 @@ The user explicitly requested inclusion of every Evidence Folder file and cleanu
 
 - [x] Recheck the four withdrawn documents and cached-copy status; unpause only the cleaned portfolio.
 - [x] Run tests and production build; verify no withdrawn files, certificate details or private data in output.
-- [ ] Publish the cleaned website and verify live content, evidence assets and removed-document URLs.
-- [ ] Document restored status and the remaining GitHub Support cache-purge action.
+- [x] Publish the cleaned website and verify live content, evidence assets and removed-document URLs.
+- [x] Document restored status and the remaining GitHub Support cache-purge action.
