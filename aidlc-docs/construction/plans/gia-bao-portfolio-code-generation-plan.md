@@ -147,3 +147,10 @@ The user explicitly requested inclusion of every Evidence Folder file and cleanu
 - [x] Back up original history privately and rewrite a separate clean clone to remove the four documents, duplicate blobs and containing ZIP.
 - [x] Verify every retained commit is clean and current application tree is unchanged, then force-update main with an explicit lease.
 - [x] Synchronize the workspace, verify a fresh remote clone and paused hosting, and record cache/clone cleanup limitations.
+
+## Requested revision: Restore cleaned website
+
+- [x] Recheck the four withdrawn documents and cached-copy status; unpause only the cleaned portfolio.
+- [x] Run tests and production build; verify no withdrawn files, certificate details or private data in output.
+- [ ] Publish the cleaned website and verify live content, evidence assets and removed-document URLs.
+- [ ] Document restored status and the remaining GitHub Support cache-purge action.

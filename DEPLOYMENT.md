@@ -1,10 +1,10 @@
 # GitHub Pages delivery
 
-The public portfolio is temporarily paused. `site-status.json` has `paused: true`; `npm run build` produces only `index.html`, `404.html` and `robots.txt`. No portfolio JavaScript, images or documents are deployed while paused. The unpublished portfolio can still be reviewed locally with `npm run dev` or built with `npm run build:portfolio`.
+The cleaned public portfolio is restored with `site-status.json` set to `paused: false`. `npm run build` produces the portfolio without IELTS Academic, SAT, Sydney eligibility or ANU offer documents/previews. Only the text mentions of results/recognition remain. Tests verify the four documents are excluded. The Pages workflow deploys only `dist`.
 
-The GitHub Pages workflow builds and deploys `dist`. The workflow is disabled after the one-time shutdown deployment to prevent automatic updates. The connected account has push access but lacks administrator access, so native Pages unpublishing was unavailable; the hosted URL serves a temporary-unavailable page instead.
+To pause again, set `paused` to `true`, build and deploy; output then contains only a temporary-unavailable page and no portfolio assets. Native Pages unpublishing requires repository administrator access, which the connected account lacks. For local review, use `npm run dev` or `npm run build:portfolio`.
 
-To restore the portfolio when requested, set `paused` to `false`, run `npm test` and `npm run build`, review the output, then commit/push and re-enable/run the Pages workflow. Keep the four withdrawn documents excluded. Native Pages unpublishing, if desired, must be performed by a repository administrator in Settings > Pages > Unpublish site.
+The restoration request authorizes re-enabling the GitHub Pages workflow and publishing the clean portfolio. Future pushes to main deploy the configured build. Before publishing, run `npm test` and `npm run build`; inspect output to ensure the withheld documents and private backups are absent.
 
 The workflow derives the root base path for an owner.github.io repository and /repository/ for a project site. Case studies use hash routes and require no server rewrites. Do not copy source inputs, private backups or workflow/audit documents into `public` or `dist`.
 

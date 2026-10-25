@@ -24,4 +24,4 @@ Selected original evidence sources remain in `src/assets/evidence/originals/`, a
 
 ## Publishing
 
-The site is temporarily paused via `site-status.json` (`paused: true`). `npm run build` produces only a temporary-unavailable page, with no portfolio JavaScript or documents. `npm run build:portfolio` is for local review of the unpublished portfolio. To restore the site after approval, set `paused` to `false`, re-enable the Pages workflow and run deployment. The prior workflow was paused during the shutdown request.
+The website uses `site-status.json` as a reversible publishing control. `paused: false` builds the cleaned portfolio; `paused: true` builds only a temporary-unavailable page. The four withdrawn documents remain excluded from the site and published Git history. Restoring the website does not purge GitHub’s cached pre-rewrite URLs; that cleanup requires GitHub Support. See DEPLOYMENT.md and the history-cleanup report for the current cache status.

@@ -9583,3 +9583,11 @@ Your AI-DLC [Code Generation rules](/Users/nhamhhung/bao252512.github.io/.aidlc-
 **Context**: User-authorized history rewrite complete for published refs. Cached/unreachable copies require GitHub Support; no external message sent. Collaborators must re-clone to avoid reintroducing history. Security Baseline/PBT N/A (disabled).
 
 ---
+
+## Restore cleaned website
+**Timestamp**: 2026-10-25T05:39:05Z
+**User Input**: "I want to restore the website but with the sensitive documents removed completely from the web, please help"
+**AI Response**: "I’ll restore the website using the cleaned portfolio and verify that the four sensitive documents stay excluded. I’ll also recheck the old cached links; if GitHub still serves them, a Support purge will be needed to remove those copies."
+**Context**: User explicitly authorizes restoration and deployment. Keep four documents absent from current files, builds and published history. Complete cache removal remains subject to GitHub Support, with draft already prepared privately; do not claim full web erasure.
+
+---
